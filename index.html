@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Search Algorithm Visualizer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+        </style>
+    <link rel="stylesheet" href="style.css" />
     
-</body>
+  </head>
+  <body>
+    <div class="header">
+        <button id="openPopupBtn">
+            Setup
+        </button>
+        <div class="heading">
+            <h1>Word Search Visualizer</h1>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span id="closePopupBtn" class="close">&times;</span>
+        <p class="details">Enter the Details</p>
+        <form action="" class="InputSection">
+            <div class="input">
+                <label for="">Row</label>
+            <input type="number">
+            </div>
+            <div class="input">
+                <label for="">Column</label>
+            <input type="number">
+            </div>
+            <div class="input">
+                <label for="">Starting number</label>
+            <input type="number">
+            </div>
+            <div class="input">
+                <label for="">Word</label>
+            <input type="text">
+            </div>
+            <div class="input">
+                <button>Generate</button>
+            </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
