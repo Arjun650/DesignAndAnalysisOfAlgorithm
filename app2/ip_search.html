@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Search</title>
+    <link rel="stylesheet" href="ip_styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>IP Address Search</h1>
+        <div class="controls">
+            <input type="text" id="ip-input" placeholder="Enter IP Address" />
+            <select id="algorithm-select">
+                <option value="algorithm1">Brute Force</option>
+                <option value="algorithm4">Branch and Bound</option>
+            </select>
+            <button id="start-button">Start Search</button>
+        </div>
+        <div id="grid-container"></div>
+        <div id="result">Execution Time:</div>
+    </div>
+    <script src="ip_script.js"></script>
+    <script src="algorithms/bruteForce.js"></script>
+    <script src="algorithms/branchAndBound.js"></script>
+</body>
+</html>
