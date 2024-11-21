@@ -12,10 +12,14 @@ body {
 .header{
     color: white;
     display: flex;
+    align-items: center;
+    height: 11vh;
+    
     
 }
 .header button{
-    font-size: 28px;
+    font-size: 25px;
+    font-weight: 600;
     color: rgb(255, 255, 255);
     padding: 10px;
     margin: 20px;
@@ -23,23 +27,25 @@ body {
     border: none;
     cursor: pointer;
     background: rgb(255, 136, 1);
+    height: 60px;
 }
 
 .header .heading{
-    width: 90vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 /* Popup styles */
 .popup {
   display: none; /* Hidden by default */
-  position: fixed;
+  position: absolute;
   width: 20vw;
   height: 60vh;
   padding: 20px;
+  top: 150px;
   left: 10px;
   border-radius: 10px;
   background-color: #ffffff;
@@ -71,7 +77,7 @@ body {
     flex-wrap: wrap;
     gap: 10px; /* Space between form elements */
     max-width: 300px; /* Maximum width of the form */
-    margin: 0 auto; /* Center the form horizontally */
+    margin: 30px auto; /* Center the form horizontally */
   }
 
   .input {
@@ -103,9 +109,114 @@ body {
     border-radius: 5px;
     cursor: pointer;
     width: auto; /* Adjust the width based on the button's content */
-    align-self: flex-start; /* Align button to the left */
+    align-self: center;
+    margin-top: 30px; /* Align button to the left */
   }
 
   .input button:hover {
     background-color: #9d5606;
+  }
+
+  .underline{
+    height: 1px;
+    background: white;
+    border: none; 
+  }
+
+  .canvas{
+    height: 85vh;
+    background: pink;
+  }
+
+  
+  .config {
+    margin: 32px auto;
+    padding: 0;
+    border: 0;
+  }
+  
+  .config tr, .config th, .config td {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .config th, .config td {
+    border: 1px solid #3e3e3e;
+    text-align: center;
+  }
+  
+  .config th {
+    font-size: 14pt;
+    font-weight: 900;
+    padding: 8px 16px;
+  }
+  
+  .config td input {
+    margin: 4px 8px;
+    padding: 2px;
+    font-size: 14pt;
+    font-weight: 900;
+    border: 0;
+    border-bottom: 2px solid #222;
+    width: 50px;
+  }
+  
+  .config td input[type=text] {
+    min-width: 150px;
+  }
+  
+  .config td input {
+    text-align: center;
+    padding: 0px;
+    border: none; 
+  }
+  
+  .config td button {
+    cursor: pointer;
+    margin: 4px;
+    background-color: #DEDEDE;
+    color: #222;
+    border: 1px solid #222;
+    font-size: 16pt;
+    height: 85px;
+  }
+  
+  .config td button:hover {
+    background-color: #EFEFEF;
+  }
+  
+  .config td button:active {
+    background-color: #454545;
+    color: #FFF;
+  }
+  
+  .config td input[type=color] {
+    border: 0;
+  }
+  
+  .config td input.interval-time {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  .config td .current-state {
+    display: inline-block;
+    width: 300px;
+  }
+
+
+  
+  img.arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 35px;
+  }
+  
+  #canvas{
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
